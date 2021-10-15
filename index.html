@@ -39,19 +39,19 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav pb-lg-1 text-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#Home">Home</a>
+                    <a class="nav-link" onclick="clearCollapse();" href="#Home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Privatkunden">Privatkunden</a>
+                    <a class="nav-link" onclick="clearCollapse();"  href="#Privatkunden">Privatkunden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Geschaftskunden">Geschäftskunden</a>
+                    <a class="nav-link" onclick="clearCollapse();" href="#Geschaftskunden">Geschäftskunden</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Aktionen">Aktionen</a>
+                    <a class="nav-link" onclick="clearCollapse();" href="#Aktionen">Aktionen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#Vortrage">Vorträge</a>
+                    <a class="nav-link" onclick="clearCollapse();" href="#Vortrage">Vorträge</a>
                 </li>
                 </ul>
             </div>
@@ -181,6 +181,13 @@
         {
             document.getElementsByTagName("header")[0].classList.remove("small");
         }
+    }
+
+    function clearCollapse()
+    {
+        var myCol=document.getElementById("navbarNav")
+        myCol.classList.remove("show");
+        document.getElementById("mobile-toggler-check").checked=false;
     }
 
 </script>
