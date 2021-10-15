@@ -4,9 +4,46 @@ body{
 
 header{
     border-bottom: 5px solid #414141;
+    background-color: #fff;
 }
+
+.navbar-brand img{
+    width: 250px;
+}
+
+header.small .navbar-brand img{
+    width: 150px;
+}
+
+@media (max-width:991px) {
+    header{
+        background: #c90044;
+
+    }
+    header .nav-link{
+        color:#fff;
+    }
+    header .nav-link:hover{
+        color:#414141;
+    }
+    .navbar-brand{
+        position: absolute;
+        left: 10px;
+        top:10px
+        }
+    .navbar-brand img{
+        width: 200px;
+    }
+
+    header.small .navbar-brand img{
+        width: 200px;
+    }
+}
+
+
 section{
     min-height: 30vh;
+    padding-top: 100px;
 }
 .btn{
     border-radius: 0;
@@ -54,7 +91,7 @@ section{
     display: block;
     width: 100%;
     height: 2px;
-    background: #c90044;
+    background: #fff;
 }
 
 .mobile-toggler:before{
@@ -66,7 +103,6 @@ section{
 }
 
 #mobile-toggler-check:checked + .mobile-toggler:after{
-    background: #414141;
     top:20px;
     -moz-transform: rotate(45deg);
 -webkit-transform: rotate(45deg);
@@ -76,6 +112,7 @@ transform: rotate(45deg);
 }
 
 #mobile-toggler-check:checked + .mobile-toggler:before{
+    background: #414141;
     -moz-transform: rotate(-45deg);
 -webkit-transform: rotate(-45deg);
 -o-transform: rotate(-45deg);

@@ -27,12 +27,16 @@ body{
     color:#fff;
 }
 
+a, header .nav-link{
+    color:#1b1d1f;
+}
+
 .btn.bg-magenta:hover{
     background-color:#1b1d1f;
 }
-a.col-dunkel:hover{
+a.col-dunkel:hover,header .nav-link:hover,header .nav-link:focus{
     color: #c90044;
 }
-a.col-dunkel-font:hover{
+a:hover,footer .nav-link:hover{
     color:#fff;
 }
