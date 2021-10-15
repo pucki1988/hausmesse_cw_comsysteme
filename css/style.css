@@ -1,0 +1,84 @@
+body{
+    font-family: 'Carrois Gothic', sans-serif;
+}
+
+header{
+    border-bottom: 5px solid #414141;
+}
+section{
+    min-height: 30vh;
+}
+.btn{
+    border-radius: 0;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.card{
+    border:0;
+}
+.card-img-top{
+    border-radius: 0;
+}
+.navbar-toggler{
+    position: relative;
+}
+.mobile-toggler{
+    position: relative;
+    top: 0;
+    width: 40px;
+    height: 60px;
+    display: block;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition: .5s ease-in-out;
+}
+
+#mobile-toggler-check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: 5;
+}
+.mobile-toggler:before,.mobile-toggler:after{
+    transition: .5s ease-in-out;
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #c90044;
+}
+
+.mobile-toggler:before{
+    top: 20px;
+}
+
+.mobile-toggler:after{
+    top: 35px;
+}
+
+#mobile-toggler-check:checked + .mobile-toggler:after{
+    background: #414141;
+    top:20px;
+    -moz-transform: rotate(45deg);
+-webkit-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+#mobile-toggler-check:checked + .mobile-toggler:before{
+    -moz-transform: rotate(-45deg);
+-webkit-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+-ms-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}

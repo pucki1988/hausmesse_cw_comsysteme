@@ -1,0 +1,38 @@
+body{
+    color:#414141;
+}
+.bg-magenta{
+    background-color: #c90044;
+}
+.bg-dunkelweiss{
+    background-color: #f2f3f3;
+}
+
+.bg-dunkel{
+    background-color: #1b1d1f;
+}
+.bg-weiss{
+    background-color: #fff;
+}
+.col-weiss{
+    color:#fff;
+}
+.col-dunkel{
+    color:#1b1d1f;
+}
+.col-dunkel-font{
+    color:#7f7f7f;
+}
+.btn.bg-magenta{
+    color:#fff;
+}
+
+.btn.bg-magenta:hover{
+    background-color:#1b1d1f;
+}
+a.col-dunkel:hover{
+    color: #c90044;
+}
+a.col-dunkel-font:hover{
+    color:#fff;
+}
