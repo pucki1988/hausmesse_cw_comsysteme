@@ -56,12 +56,33 @@ section{
 .btn:focus{
     box-shadow: none;
 }
+
+.blog-beitrag{
+    text-decoration: none;
+}
+
 .card{
     border:0;
+    -webkit-transition: all .2s ease-in;
+-moz-transition: all .2s ease-in;
+-ms-transition: all .2s ease-in;
+-o-transition: all .2s ease-in;
+transition: all .2s ease-in;
 }
 .card-img-top{
     border-radius: 0;
 }
+
+.blog-beitrag:hover > .card{
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    -o-transform: scale(1.01);
+    -ms-transform: scale(1.01);
+    transform: scale(1.01);
+}
+
+
+/*Mobile Menü*/
 .navbar-toggler{
     position: relative;
 }

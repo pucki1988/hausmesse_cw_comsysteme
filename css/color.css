@@ -40,3 +40,7 @@ a.col-dunkel:hover,header .nav-link:hover,header .nav-link:focus{
 a:hover,footer .nav-link:hover{
     color:#fff;
 }
+
+.blog-beitrag:hover{
+    color:#1b1d1f;
+}
