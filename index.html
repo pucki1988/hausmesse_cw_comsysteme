@@ -3,8 +3,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta name="theme-color" content="#c90044" />
-    <title>Hausmesse | Wensauer Com-Systeme GmbH</title>
-    <meta itemprop="name" content="JWU Hohenau-Schönbrunn am Lusen | Junge Wähler Union">
+    <title>Hausmesse 2021 | Wensauer Com-Systeme GmbH</title>
+    <meta itemprop="name" content="Hausmesse 2021 | Wensauer Com-Systeme GmbH">
     <meta name="description" content="Die Junge Wähler Union Hohenau-Schönbrunn am Lusen ist eine 2001 gegründete politische Jugendorganisation in der Gemeinde Hohenau. Die JWU setzt sich für die Interessen der Gemeindebürger ein will als Ideen- und Impulsgeber aktiv an der Gestaltung unserer Heimat mitarbeiten.">
     <meta itemprop="description" content="Die Junge Wähler Union Hohenau-Schönbrunn am Lusen ist eine 2001 gegründete politische Jugendorganisation in der Gemeinde Hohenau. Die JWU setzt sich für die Interessen der Gemeindebürger ein will als Ideen- und Impulsgeber aktiv an der Gestaltung unserer Heimat mitarbeiten.">
     <meta name="keywords" content="Junge Wähler Union, JWU Hohenau, JWU Schönbrunn am Lusen, Junge Wähler Union, JWU FRG, JWU Freyung-Grafenau">
@@ -216,13 +216,10 @@
             <div class="container-fluid justify-content-center">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link col-dunkel-font" href="#">Kontakt & Anfahrt</a>
+                    <a class="nav-link col-dunkel-font" href="https://www.cw-comsysteme.de/service-support/impressum/">Impressum</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link col-dunkel-font" href="#">Impressum</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link col-dunkel-font" href="#">Datenschutz</a>
+                    <a class="nav-link col-dunkel-font" href="https://www.cw-comsysteme.de/service-support/datenschutz/">Datenschutz</a>
                   </li>
                 </ul>
             </div>
@@ -231,63 +228,7 @@
 </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-
-    window.onscroll = function() {setScroll()};
-    function setScroll()
-    {
-
-        
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) 
-        {
-            if(window.innerWidth<991)
-            {
-                setPaddingTop("section","90px")
-            }
-            else{
-                setPaddingTop("section","110px")
-            }
-            document.getElementsByTagName("body")[0].classList.add("small-menu");
-            document.getElementsByTagName("header")[0].classList.add("position-fixed");
-           
-        }
-        else
-        {
-            if(window.innerWidth<991)
-            {
-                setPaddingTop("section","0px")
-            }
-            else{
-                setPaddingTop("section","10px")
-            }
-            document.getElementsByTagName("body")[0].classList.remove("small-menu");
-            document.getElementsByTagName("header")[0].classList.remove("position-fixed");
-
-           
-        }
-    }
-
-
-    function setPaddingTop(selektor,pTop){
-        var selektoren=document.querySelectorAll(selektor);
-
-        for(i=0;i<selektoren.length;i++)
-        {
-            document.getElementById(selektoren[i].id).style.paddingTop=pTop;
-        }
-
-    }
-
-    function clearCollapse()
-    {
-        var myCol=document.getElementById("navbarNav")
-        myCol.classList.remove("show");
-        document.getElementById("mobile-toggler-check").checked=false;
-    }
-
-   
-
-</script>
+<script src="js/style.js"></script>
 </body>
 
 </html>
