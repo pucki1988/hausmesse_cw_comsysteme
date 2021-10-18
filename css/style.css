@@ -1,11 +1,15 @@
 body{
     
     font-family: 'Carrois Gothic', sans-serif;
+    margin: 0;
+    padding:0;
 }
 
 header{
     border-bottom: 5px solid #414141;
     background-color: #fff;
+    width: 100%;
+    z-index: 5;
 }
 
 .navbar-brand img{
@@ -27,6 +31,7 @@ body.small-menu header .navbar-brand img{
     header .nav-link:hover{
         color:#414141;
     }
+
     .navbar-brand{
         position: absolute;
         left: 10px;
@@ -42,19 +47,6 @@ body.small-menu header .navbar-brand img{
 }
 section{
     min-height: 30vh;
-    padding-top: 10px;
-}
-body.small-menu section{
-    padding-top: 110px;;
-}
-
-@media(max-width:991px){
-    section{
-        padding-top: 0;
-    }
-    body.small-menu section{
-        padding-top: 80px;
-    }
 }
 
 .banner-text{
@@ -172,9 +164,9 @@ transform: rotate(-45deg);
 
 .highlight-center:before{
     position: absolute;
-    width: 100px;
+    width: 80px;
     content:'';
-    left: calc(50% - 50px);
+    left: calc(50% - 40px);
     top: -25px;
     border-bottom:5px solid #c90044;
 }
