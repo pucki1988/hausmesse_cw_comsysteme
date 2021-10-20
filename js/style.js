@@ -1,3 +1,5 @@
+
+window.onload=function(){checkCookie()};
 window.onscroll = function() {setScroll()};
 function setScroll()
 {
@@ -54,6 +56,37 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
     
     e.preventDefault()
     if(document.getElementById("vipCode").value.toUpperCase()=="VIP21"){
-        document.getElementById("overlay").classList.add("d-none")
+        setCookie();
+        checkCookie()
     }
 })
+
+
+function setCookie() {
+    const d = new Date();
+    d.setTime(d.getTime() + (3*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
+    document.cookie = "vipcode=true;" + expires + ";path=/";
+  }
+
+  function checkCookie() {
+    let vipcode = getCookie("vipcode");
+    if (vipcode != "") {
+        document.getElementById("overlay").classList.add("d-none");
+    } 
+  }
+
+  function getCookie(cname) {
+  let name = cname + "=";
+  let ca = document.cookie.split(';');
+  for(let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}

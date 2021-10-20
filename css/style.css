@@ -186,28 +186,29 @@ transform: rotate(-45deg);
     text-transform: uppercase;
     border:none;
     outline: 0;
+    padding:1rem 0
 }
 
 .overlay-form input::placeholder{
-    color:#fff;
+    color:rgba(255,255,255,.6);
 }
 
 .overlay-form input:-ms-input-placeholder{
-    color:#fff;
+    color:rgba(255,255,255,.6);;
 }
 .overlay-form input::-ms-input-placeholder{
-    color:#fff;
+    color:rgba(255,255,255,.6);;
 }
 
 .overlay-content span{
     background-color: #c90044;
     color:#fff;
     padding:5px 20px;
-    -moz-transform: rotate(30deg) translateX(-20px) translateY(-20px);
-    -webkit-transform: rotate(30deg) translateX(-20px) translateY(-20px);
-    -o-transform: rotate(30deg) translateX(-20px) translateY(-20px);
-    -ms-transform: rotate(30deg) translateX(-20px) translateY(-20px);
-    transform: rotate(30deg) translateX(-20px) translateY(-20px);
+    -moz-transform: rotate(30deg) translateX(-25px) translateY(-15px);
+    -webkit-transform: rotate(30deg) translateX(-25px) translateY(-15px);
+    -o-transform: rotate(30deg) translateX(-25px) translateY(-15px);
+    -ms-transform: rotate(30deg) translateX(-25px) translateY(-15px);
+    transform: rotate(30deg) translateX(-25px) translateY(-15px);
 }
 .overlay-logo img{
     width: 250px;
