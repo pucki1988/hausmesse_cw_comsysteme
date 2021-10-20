@@ -50,6 +50,10 @@ function clearCollapse()
     document.getElementById("mobile-toggler-check").checked=false;
 }
 
-document.getElementById("vipForm").addEventListener("submit",function(){
-    alert("Ja")
+document.getElementById("vipForm").addEventListener("submit",function(e){
+    
+    e.preventDefault()
+    if(document.getElementById("vipCode").value.toUpperCase()=="VIP21"){
+        document.getElementById("overlay").classList.add("d-none")
+    }
 })
