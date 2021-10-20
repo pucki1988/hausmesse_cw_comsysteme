@@ -49,3 +49,7 @@ function clearCollapse()
     myCol.classList.remove("show");
     document.getElementById("mobile-toggler-check").checked=false;
 }
+
+document.getElementById("vipForm").addEventListener("submit",function(){
+    alert("Ja")
+})
