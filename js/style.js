@@ -57,7 +57,7 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
     e.preventDefault()
     if(document.getElementById("vipCode").value.toUpperCase()=="VIP21"){
         setCookie();
-        checkCookie()
+        document.getElementById("overlay").classList.add("d-none");
     }
 })
 
