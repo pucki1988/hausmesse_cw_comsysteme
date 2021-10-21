@@ -55,12 +55,26 @@ function clearCollapse()
 document.getElementById("vipForm").addEventListener("submit",function(e){
     
     e.preventDefault()
-    if(document.getElementById("vipCode").value.toUpperCase()=="VIP21"){
-        setCookie();
-        document.getElementById("overlay").classList.add("d-none");
+    
+    document.getElementById("vipCode").classList.remove("vip-false");
+
+    if(btoa(document.getElementById("vipCode").value.toUpperCase())=="VklQMjE="){
+        document.getElementById("overlay").style.animationPlayState='running';
+        setTimeout(function(){
+            setCookie();
+            document.getElementById("overlay").classList.add("unsichtbar");
+            setTimeout(function(){
+                document.getElementById("overlay").classList.add("d-none");
+            },500)
+        },1000)
     }
     else{
-        document.getElementById("vipCode").classList.add("vip-false");
+        document.getElementById("vipSubmit").style.animationPlayState='running'
+        document.getElementById("vipCode").style.backgroundColor='#7f7f7f'
+        setTimeout(function(){
+            document.getElementById("vipSubmit").style.animationPlayState='paused'
+            document.getElementById("vipCode").style.backgroundColor='#c90044'
+        },300);
     }
 })
 
