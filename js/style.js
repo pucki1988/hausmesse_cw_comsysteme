@@ -59,6 +59,9 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
         setCookie();
         document.getElementById("overlay").classList.add("d-none");
     }
+    else{
+        document.getElementById("vipCode").classList.add("vip-false");
+    }
 })
 
 
