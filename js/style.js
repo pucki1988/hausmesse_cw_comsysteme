@@ -73,7 +73,8 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
         document.getElementById("vipCode").style.backgroundColor='#7f7f7f'
         setTimeout(function(){
             document.getElementById("vipCode").style.backgroundColor='#c90044'
-        },300);
+           
+        },400);
     }
 })
 

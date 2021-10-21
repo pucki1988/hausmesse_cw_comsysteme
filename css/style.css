@@ -67,6 +67,10 @@ section{
     box-shadow: none;
 }
 
+.btn.bg-dunkel:hover{
+    color:#f2f3f3;
+}
+
 .blog-beitrag{
     text-decoration: none;
 }
