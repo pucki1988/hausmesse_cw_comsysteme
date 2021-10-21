@@ -69,10 +69,9 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
         },1000)
     }
     else{
-        document.getElementById("vipSubmit").style.animationPlayState='running'
+        
         document.getElementById("vipCode").style.backgroundColor='#7f7f7f'
         setTimeout(function(){
-            document.getElementById("vipSubmit").style.animationPlayState='paused'
             document.getElementById("vipCode").style.backgroundColor='#c90044'
         },300);
     }
