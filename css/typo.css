@@ -28,6 +28,10 @@ p{
     font-size: 1.2rem;
 }
 
+.fusszeile{
+    font-size: .6rem;
+}
+
 @media (max-width:991px){
     h1{
         font-size: 2.5rem;
