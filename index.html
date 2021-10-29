@@ -261,8 +261,10 @@
 
     var options = { 
         pdf: 'src/Telekom-Flyer-Oktober-2021.pdf',
-        controlsProps: { // set of optional properties that allow to customize 3D FlipBook control
-            enabled: false
+        template: { // by means this property you can choose appropriate skin
+        styles: [
+        'css/white-book-view.css'// or one of white-book-view.css, short-white-book-view.css, shart-black-book-view.css
+        ]
         }
     }
 
