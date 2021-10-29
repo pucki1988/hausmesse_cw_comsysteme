@@ -62,6 +62,7 @@ a.disabled, .cmd.disabled {
 
 .view {
   height: calc(100% - 42px);
+  background-color: #f2f3f3;
 }
 
 .loading-progress {
