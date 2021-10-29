@@ -24,7 +24,7 @@ li a, li .cmd {
 }
 
 a, .cmd {
-  color: #777;
+  color: #fff;
   text-decoration: none;
   cursor: pointer;
 }
@@ -156,10 +156,10 @@ a.disabled, .cmd.disabled {
   position: absolute;
   bottom: 0px;
   width: 100%;
-  background-image: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
-  background-repeat: repeat-x;
+  /*background-image: linear-gradient(to bottom,#fff 0,#f8f8f8 100%);
+  background-repeat: repeat-x;*/
   padding: 3px;
-  background-color: #f8f8f8;
+  background-color: #1b1d1f;
   text-align: center;
 }
 .toolbar ul, .toolbar li {
