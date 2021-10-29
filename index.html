@@ -201,19 +201,6 @@
 
                     </div>
 
-                    <script type="text/javascript">
-
-                    var options = { 
-                        pdf: 'src/Telekom-Flyer-Oktober-2021.pdf',
-                        controlsProps: { // set of optional properties that allow to customize 3D FlipBook control
-                            enabled: false
-                        }
-                    }
-
-                    $('.solid-container').FlipBook(options);
-                    </script>
-
-                
             </div>
         </div>
     </div>
@@ -270,6 +257,17 @@
 <script src="js/three.min.js"></script>
 <script src="js/pdf.min.js"></script>
 <script src="js/3dflipbook.min.js"></script>
+<script type="text/javascript">
+
+    var options = { 
+        pdf: 'src/Telekom-Flyer-Oktober-2021.pdf',
+        controlsProps: { // set of optional properties that allow to customize 3D FlipBook control
+            enabled: false
+        }
+    }
+
+    $('.solid-container').FlipBook(options);
+    </script>
 <!--3D Flipbook-->
 </body>
 
