@@ -197,9 +197,21 @@
                     frameborder="0" 
                     allowtransparency="true" 
                     allowfullscreen="true" ></iframe>-->
-                    <div class="flip-book-container solid-container" src="src/Telekom-Flyer-Oktober-2021.pdf">
+                    <div class="solid-container py-5">
 
                     </div>
+
+                    <script type="text/javascript">
+
+                    var options = { 
+                        pdf: 'src/Telekom-Flyer-Oktober-2021.pdf',
+                        controlsProps: { // set of optional properties that allow to customize 3D FlipBook control
+                            enabled: false
+                        }
+                    }
+
+                    $('.solid-container').FlipBook(options);
+                    </script>
 
                 
             </div>
