@@ -171,3 +171,6 @@ transform: rotate(-45deg);
     border-bottom:5px solid #c90044;
 }
 
+.solid-container {
+    height: 100vh;
+  }
