@@ -49,6 +49,10 @@ section{
     min-height: 30vh;
 }
 
+section.pagebreaker{
+    min-height: auto;
+}
+
 .banner-text{
     position: absolute;
     top: 40%;
