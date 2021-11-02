@@ -59,6 +59,12 @@ section.pagebreaker{
     width: 100%;
 }
 
+@media(max-width:767px){
+    .banner-text{
+        top: 10%;
+    }
+}
+
 .btn{
     border-radius: 0;
     -webkit-transition: all .3s ease-in;
