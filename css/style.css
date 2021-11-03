@@ -61,23 +61,24 @@ section.pagebreaker{
 
 @media(max-width:767px){
     .banner-text{
-        top: 10%;
+        top: 20%;
     }
 }
 
-.btn{
+.btn,.btn-lg{
     border-radius: 0;
     -webkit-transition: all .3s ease-in;
     -moz-transition: all .3s ease-in;
     -ms-transition: all .3s ease-in;
     -o-transition: all .3s ease-in;
     transition: all .3s ease-in;
+    text-decoration: none;
 }
-.btn:focus{
+.btn:focus,.btn-lg:focus{
     box-shadow: none;
 }
 
-.btn.bg-dunkel:hover{
+.btn.bg-dunkel:hover,.btn-lg.g-dunkel:hover{
     color:#f2f3f3;
 }
 

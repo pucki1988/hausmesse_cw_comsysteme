@@ -1,5 +1,5 @@
 
-window.onload=function(){checkCookie()};
+window.onload=function(){checkCookie();setScroll()};
 window.onscroll = function() {setScroll()};
 function setScroll()
 {
@@ -7,6 +7,9 @@ function setScroll()
     
     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) 
     {
+        
+        document.getElementsByTagName("body")[0].classList.add("small-menu");
+        document.getElementsByTagName("header")[0].classList.add("position-fixed");
         if(window.innerWidth<991)
         {
             setPaddingTop("section","90px")
@@ -14,8 +17,7 @@ function setScroll()
         else{
             setPaddingTop("section","110px")
         }
-        document.getElementsByTagName("body")[0].classList.add("small-menu");
-        document.getElementsByTagName("header")[0].classList.add("position-fixed");
+        
        
     }
     else
@@ -40,7 +42,13 @@ function setPaddingTop(selektor,pTop){
 
     for(i=0;i<selektoren.length;i++)
     {
-        document.getElementById(selektoren[i].id).style.paddingTop=pTop;
+        if((document.body.scrollTop <= 200 || document.documentElement.scrollTop <= 200) && selektoren[i].id =="Geschaftskundentag")
+        {
+            document.getElementById(selektoren[i].id).style.paddingTop="110px";
+        }
+        else{
+            document.getElementById(selektoren[i].id).style.paddingTop=pTop;
+        }
     }
 
 }
@@ -58,7 +66,7 @@ document.getElementById("vipForm").addEventListener("submit",function(e){
     
     document.getElementById("vipCode").classList.remove("vip-false");
 
-    if(btoa(document.getElementById("vipCode").value.toUpperCase())=="VklQMjE="){
+    if(btoa(document.getElementById("vipCode").value.toUpperCase())=="VklQMjQxMQ=="){
         document.getElementById("overlay").style.animationPlayState='running';
         setTimeout(function(){
             setCookie();

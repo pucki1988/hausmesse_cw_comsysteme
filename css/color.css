@@ -27,7 +27,7 @@ body{
 .col-dunkel-font{
     color:#7f7f7f;
 }
-.btn.bg-magenta{
+.btn.bg-magenta,.btn-lg.bg-magenta{
     color:#fff;
 }
 
@@ -35,7 +35,7 @@ a, header .nav-link{
     color:#1b1d1f;
 }
 
-.btn.bg-magenta:hover{
+.btn.bg-magenta:hover,.btn-lg.bg-magenta:hover{
     background-color:#1b1d1f;
 }
 a.col-dunkel:hover,header .nav-link:hover,header .nav-link:focus{
