@@ -63,6 +63,9 @@ section.pagebreaker{
     .banner-text{
         top: 20%;
     }
+    section{
+        min-height: auto;
+    }
 }
 
 .btn,.btn-lg{
