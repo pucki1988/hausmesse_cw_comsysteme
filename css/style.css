@@ -274,3 +274,16 @@ transform: rotate(-45deg);
     animation-iteration-count: 1;
     animation-timing-function: linear;
 }
+
+.mitarbeiter img{
+    border-top: 3px solid #c90044;
+
+}
+.mitarbeiter p{
+    text-align: center;
+    background: #c90044;
+    color: #fff;
+    padding: .2rem;
+
+}
+

@@ -1,5 +1,5 @@
 
-window.onload=function(){checkCookie();setScroll()};
+window.onload=function(){setScroll()};
 window.onscroll = function() {setScroll()};
 function setScroll()
 {
@@ -60,7 +60,7 @@ function clearCollapse()
     document.getElementById("mobile-toggler-check").checked=false;
 }
 
-document.getElementById("vipForm").addEventListener("submit",function(e){
+/*document.getElementById("vipForm").addEventListener("submit",function(e){
     
     e.preventDefault()
     
@@ -114,4 +114,4 @@ function setCookie() {
     }
   }
   return "";
-}
+}*/
