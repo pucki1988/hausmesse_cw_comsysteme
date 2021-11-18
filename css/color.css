@@ -27,7 +27,7 @@ body{
 .col-dunkel-font{
     color:#7f7f7f;
 }
-.btn.bg-magenta,.btn-lg.bg-magenta{
+.btn.bg-magenta,.btn-lg.bg-magenta,.btn.bg-sophos,.btn-lg.bg-sophos,.btn.bg-itb,.btn-lg.bg-itb{
     color:#fff;
 }
 
@@ -35,7 +35,7 @@ a, header .nav-link{
     color:#1b1d1f;
 }
 
-.btn.bg-magenta:hover,.btn-lg.bg-magenta:hover{
+.btn.bg-magenta:hover,.btn-lg.bg-magenta:hover,.btn.bg-sophos:hover,.btn-lg.bg-sophos:hover,.btn.bg-itb:hover,.btn-lg.bg-itb:hover{
     background-color:#1b1d1f;
 }
 a.col-dunkel:hover,header .nav-link:hover,header .nav-link:focus{
@@ -47,4 +47,24 @@ a:hover,footer .nav-link:hover{
 
 .blog-beitrag:hover{
     color:#1b1d1f;
+}
+
+.bg-sophos{
+    background-color: #1f65ad;
+}
+
+.bg-itb{
+    background-color: #005c4d;
+}
+
+.border-magenta{
+    color: #c90044;
+}
+
+.border-sophos{
+    color: #1f65ad;
+}
+
+.border-itb{
+    color: #005c4d ;
 }

@@ -276,14 +276,14 @@ transform: rotate(-45deg);
 }
 
 .mitarbeiter img{
-    border-top: 3px solid #c90044;
+    border-top: 3px solid;
 
 }
 .mitarbeiter p{
     text-align: center;
-    background: #c90044;
     color: #fff;
     padding: .2rem;
 
 }
+
 
