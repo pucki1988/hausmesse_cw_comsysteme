@@ -187,7 +187,12 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1><span class="color-font">Hausmesse Flyer 2021</span></h1>
-                <h4 class="mb-5">Alle Angebote gültig bis vom 12.11. bis 30.11.2021 – Solange Vorrat reicht                </h4>                    <div class="solid-container py-5">
+                <h4 class="mb-5">Alle Angebote gültig bis vom 12.11. bis 30.11.2021 – Solange Vorrat reicht                </h4>                    
+                <div class="solid-container flyer_cwc py-5">
+
+                    </div>
+                    
+                    <div class="solid-container flyer_also py-5">
 
                     </div>
 
@@ -259,8 +264,25 @@
         }
     }
 
-    $('.solid-container').FlipBook(options);
+    $('.flyer_cwc').FlipBook(options);
     </script>
+<script type="text/javascript">
+
+    var options = { 
+        pdf: 'src/ALSO_Telekom_PK_MagentaThursday_November_2021.pdf',
+        template: { // by means this property you can choose appropriate skin
+        styles: [
+        'css/white-book-view.css'// or one of white-book-view.css, short-white-book-view.css, shart-black-book-view.css
+        ]
+        
+        }
+    }
+
+    $('.flyer_also').FlipBook(options);
+    </script>
+
+
+
 <!--3D Flipbook-->
 </body>
 
